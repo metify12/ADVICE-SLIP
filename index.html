@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>INTERNSHIP | Advice Generator App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h4 id="ad-id">LOADING...</h4>
+        <p id="ad-body">Loading</p>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="./images/pattern-divider-mobile.svg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="./images/pattern-divider-desktop.svg"
+          />
+          <img
+            src="./images/pattern-divider-desktop.svg"
+            alt="Divider Pattern"
+            id="pattern"
+          />
+        </picture>
+        <!-- <img src="./images/pattern-divider-mobile.svg" alt="" id="pattern" /> -->
+        <img src="./images/icon-dice.svg" alt="" id="dice" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

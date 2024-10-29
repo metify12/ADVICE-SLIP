@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(218, 23%, 16%);
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  width: 320px;
+  position: relative;
+  background-color: hsl(217, 19%, 24%);
+  padding: 30px;
+  border-radius: 10px;
+}
+#ad-id {
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+  margin-top: 0;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#pattern {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#dice {
+  position: absolute;
+  bottom: -20px;
+  left: 140px;
+  background-color: hsl(150, 100%, 66%);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+#dice:hover {
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 20px hsl(150, 100%, 70%), 0 0 40px hsl(150, 100%, 70%);
+}
+#ad-body {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+}
+@media (width > 760px) {
+  #dice {
+    left: 167px;
+  }
+  .card{
+    width: 380px;
+  }
+}
